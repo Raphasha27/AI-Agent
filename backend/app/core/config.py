@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     LLM_MAX_TOKENS: int = 4096
 
     # ── Database ──────────────────────────────────────────────────────────────
-    DATABASE_URL: str = "postgresql://admin:password@localhost:5432/aiagent"
+    DATABASE_URL: str = "sqlite:///./sqlite_aiagent.db"
 
     # ── Security ──────────────────────────────────────────────────────────────
     SECRET_KEY: str = "change-me-in-production"

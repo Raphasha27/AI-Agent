@@ -10,8 +10,13 @@ from app.api.routes_agent import router as agent_router
 from app.api.routes_tasks import router as task_router
 from app.api.routes_health import router as health_router
 from app.core.logging import configure_logging
+from app.db.database import engine, Base
+from app.models import task, user, memory  # Import models to register them with Base
 
 configure_logging()
+
+# Create tables if they don't exist
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI Agent Platform",
