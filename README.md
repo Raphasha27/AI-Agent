@@ -87,6 +87,14 @@ npm install
 npm run dev
 ```
 
+---
+
+## 📈 Contribution Graph
+
+![Contribution Snake Animation](https://raw.githubusercontent.com/Raphasha27/Github-Harden/output/github-contribution-grid-snake.svg)
+
+---
+
 📜 **License**
 MIT © 2026 — **Kirov Dynamics Technology** · Republic of South Africa
 
