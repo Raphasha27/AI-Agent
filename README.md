@@ -91,7 +91,7 @@ npm run dev
 
 ## 📈 Contribution Graph
 
-![Contribution Snake Animation](https://raw.githubusercontent.com/Raphasha27/Github-Harden/output/github-contribution-grid-snake.svg)
+![Contribution Snake Animation](https://github.com/Raphasha27/Github-Harden/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
