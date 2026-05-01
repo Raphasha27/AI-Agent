@@ -245,8 +245,4 @@ const VenueSeatingControl = () => {
   );
 };
 
-
-export default VenueSeatingControl;
-
-
 export default VenueSeatingControl;
