@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/landing/next.config.js",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "services/core/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/services/core/main.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/apps/landing/$1"
+    }
+  ]
+}
