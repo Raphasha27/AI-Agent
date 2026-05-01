@@ -25,6 +25,60 @@ Sumbandila is an official national digital infrastructure platform built to conn
 - `services/core` — FastAPI backend (Python 3.11).
 - `scripts/` — Security audit and data pipeline tools.
 
+---
+
+🗺️ **Platform Architecture**
+
+```mermaid
+graph TD
+    subgraph Frontend ["Frontend Ecosystem (Next.js 16 + React 19)"]
+        Landing["🏠 Landing App (Main Portal)"]
+        Web["🌐 Web App (Vite Dashboard)"]
+        Mobile["📱 Mobile App (Expo Go)"]
+    end
+
+    subgraph Backend ["Backend Infrastructure (FastAPI V4)"]
+        Core["⚙️ Core Services (Python 3.11)"]
+        DB[(🗄️ PostgreSQL / Supabase)]
+        Sentinel["🛡️ L5 Sentinel (Encryption Layer)"]
+    end
+
+    subgraph Data ["Data Intelligence & Scrapers"]
+        Scrapers["🕵️ Scrapers (Playwright/pdfplumber)"]
+        Audit["🔍 Security Audit (POPIA Check)"]
+        Registry[(📊 National Registry Pulse)]
+    end
+
+    Landing <--> Core
+    Web <--> Core
+    Mobile <--> Core
+    Core <--> DB
+    Core <--> Sentinel
+    Scrapers --> Registry
+    Registry --> Core
+    Audit --> Core
+```
+
+🔄 **User Journey Flow**
+
+```mermaid
+sequenceDiagram
+    participant Citizen as 🇿🇦 Citizen
+    participant Landing as 🏠 Landing App
+    participant Sentinel as 🛡️ L5 Sentinel
+    participant Core as ⚙️ Core Services
+    participant DB as 📊 National Registry
+
+    Citizen->>Landing: Access Platform
+    Landing->>Core: Request Verification
+    Core->>Sentinel: Fingerprint Request (SHA-256)
+    Sentinel-->>Core: Secure Token
+    Core->>DB: Query Accredited Institutions
+    DB-->>Core: Return Registry Data
+    Core-->>Landing: Verified Results (Green/Yellow/Red)
+    Landing-->>Citizen: Display National Trust Status
+```
+
 🚀 **Quick Start**
 ```bash
 npm install
