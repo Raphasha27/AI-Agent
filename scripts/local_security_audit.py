@@ -1,3 +1,5 @@
+# Sumbandila Local Security Audit Tool
+# (c) 2026 Kirov Dynamics Technology
 import os
 import re
 import hashlib
