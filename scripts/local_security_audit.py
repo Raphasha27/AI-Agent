@@ -36,6 +36,11 @@ def check_popia_compliance():
     # Exclusion list to avoid scanning node_modules, .git, and binary files if possible
     excluded_dirs = ["node_modules", ".git", ".next", "dist", "build", "pw-browsers", ".venv", "venv"]
     
+    # Check if we have anything to scan
+    if not any(os.path.isdir(d) for d in ['.', 'apps', 'services', 'scripts']):
+        print("ℹ️ No target directories found for scanning.")
+        return
+
     for root, dirs, files in os.walk("."):
         # Remove excluded dirs from search
         dirs[:] = [d for d in dirs if d not in excluded_dirs]
