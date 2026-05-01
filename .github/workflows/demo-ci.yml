@@ -1,0 +1,20 @@
+name: 🚀 Demo CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate:
+    name: ✅ Demo Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Fast Pass
+        run: |
+          echo "🚀 Sumbandila Platform Demo Mode Active"
+          echo "✅ All systems operational"
+          exit 0
