@@ -1,0 +1,11 @@
+# Ignore mock keys for Future AGI development
+backend/app/communication/whatsapp_manager.py
+backend/app/integrations/work_iq_connector.py
+backend/app/voice_ai/ultravox_connector.py
+backend/app/voice_ai/crm_connector.py
+backend/app/agents/linkedin_agent.py
+Future-AGI/backend/app/communication/whatsapp_manager.py
+Future-AGI/backend/app/integrations/work_iq_connector.py
+Future-AGI/backend/app/voice_ai/ultravox_connector.py
+Future-AGI/backend/app/voice_ai/crm_connector.py
+Future-AGI/backend/app/agents/linkedin_agent.py
