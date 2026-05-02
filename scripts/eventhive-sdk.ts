@@ -15,6 +15,9 @@
  *   const task   = await client.dispatchTask({ title: 'VIP Issue', priority: 'P1' });
  */
 
+// Allow CommonJS require for optional React peer dependency (no @types/node needed)
+declare function require(module: string): any; // eslint-disable-line no-var
+
 // ─── Enums & Constants ──────────────────────────────────────────────────────
 
 export type Priority = 'P1' | 'P2' | 'P3';
@@ -234,7 +237,6 @@ export function useEventHive(options: UseEventHiveOptions): UseEventHiveReturn {
   // Lazy React import — only resolves when called inside a React component.
   // Swap this for your preferred state management if needed.
   try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { useState, useEffect, useCallback, useRef } = require('react');
     const client = new EventHiveClient(options);
     const interval = options.pollIntervalMs ?? 1_000;
