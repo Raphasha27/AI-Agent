@@ -35,7 +35,7 @@ The project showcases architectural "power" across several high-performance stac
 | **EventHive-C** | C | `libuv`, `http-parser`, `SQLite3` | High-precision event orchestration engine. |
 | **Security Engine** | Python | `argparse`, `regex`, `json` | Comprehensive local security & PII auditor. |
 | **Health Monitor** | Go | `net/http`, `encoding/json` | Dependency-free real-time engine health checker. |
-| **Client SDK** | TypeScript | `AbortController`, `React Hooks` | Type-safe SDK for engine integration. |
+| **Future AGI** | Python | `LangChain`, `CrewAI`, `FastAPI` | Integrated platform for AI self-improvement. |
 | **Landing App** | Next.js | `React`, `Tailwind CSS` | Public-facing interface for the ecosystem. |
 
 ---
@@ -67,14 +67,14 @@ graph TD
 
     subgraph Integration ["Developer SDKs"]
         TS_SDK["TS EventHive SDK"]
-        React_Hooks["React useEventHive()"]
+        Future_AGI["🚀 Future AGI (Python)"]
     end
 
     Audit --> C_Engine
     Scanner --> C_Engine
     C_Engine --> Go_Monitor
     C_Engine --> TS_SDK
-    TS_SDK --> React_Hooks
+    TS_SDK --> Future_AGI
 ```
 
 ---
