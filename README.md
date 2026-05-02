@@ -15,6 +15,18 @@ Once fully validated, this ecosystem will be deployed as an open-source educatio
 
 ---
 
+## 🤝 Agency Partner Program
+**I build. You scale.**  
+I partner with agency owners, marketers, and funnel builders to handle the complex build side of AI Voice Agents.
+- **Lead Qualification & Routing**
+- **Automated Appointment Booking**
+- **Advanced CRM & Workflow Sync (15+ Connectors)**
+- **Backend White-Label Support**
+
+[**Become a Partner**](https://github.com/Raphasha27/Github-Harden/blob/main/apps/landing/pages/partner.jsx)
+
+---
+
 ## 🚀 Multi-Language Ecosystem
 The project showcases architectural "power" across several high-performance stacks:
 

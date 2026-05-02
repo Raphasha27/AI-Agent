@@ -16,6 +16,14 @@ export default function Home() {
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             The national ecosystem for youth growth, secure orchestration, and community event safety.
           </p>
+          <div className="pt-4">
+            <a 
+              href="/partner" 
+              className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/10 border border-orange-500/20 text-orange-400 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-orange-500/20 transition-all"
+            >
+              🤝 Agency Partner Program
+            </a>
+          </div>
         </section>
 
         {/* Seating Control Component */}
