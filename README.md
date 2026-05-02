@@ -22,6 +22,7 @@ I partner with agency owners, marketers, and funnel builders to handle the compl
 - **Automated Appointment Booking**
 - **Advanced CRM & Workflow Sync (15+ Connectors)**
 - **n8n Workflow Engineering (Real Problem Solving)**
+- **Elite AI Tactics (SOPs, PDF Action Plans, Intel)**
 - **Backend White-Label Support**
 
 [**Become a Partner**](https://github.com/Raphasha27/Github-Harden/blob/main/apps/landing/pages/partner.jsx)

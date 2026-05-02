@@ -41,6 +41,11 @@ const ServicePillars = () => {
       title: "Intelligent LinkedIn Outreach",
       desc: "Find and engage founders & decision-makers with Claude-powered personalization.",
       icon: "🤝"
+    },
+    {
+      title: "SOP & Action Plan Engineering",
+      desc: "Turn complex PDFs and transcripts into automated action plans and team SOPs.",
+      icon: "📋"
     }
   ];
 

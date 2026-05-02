@@ -20,6 +20,14 @@ const VoicePartnerHero = () => {
             </span>
           </h1>
 
+          <div className="flex justify-center gap-6 text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">
+            <span>Powered by Anthropic</span>
+            <span className="text-slate-800">•</span>
+            <span>$40B Google Strategic Partner</span>
+            <span className="text-slate-800">•</span>
+            <span>n8n Verified</span>
+          </div>
+
           <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
             I partner with agency owners and funnel builders to handle the complex build side of AI Voice. 
             From call flows and CRM sync to high-conversion prompts—I'm your reliable backend engineer.
