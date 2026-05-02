@@ -36,6 +36,11 @@ const ServicePillars = () => {
       title: "n8n Workflow Engineering",
       desc: "Custom automations built to solve REAL problems, not just for the sake of it.",
       icon: "⚙️"
+    },
+    {
+      title: "Intelligent LinkedIn Outreach",
+      desc: "Find and engage founders & decision-makers with Claude-powered personalization.",
+      icon: "🤝"
     }
   ];
 

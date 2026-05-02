@@ -33,6 +33,37 @@ export default function PartnerPage() {
 
         <ServicePillars />
 
+        {/* Featured Case Study */}
+        <section className="py-24 bg-slate-900/30">
+          <div className="container mx-auto px-6">
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl font-bold text-white uppercase tracking-tighter italic">Featured Case Study</h2>
+              <p className="text-slate-500">Real problems. Real solutions. Real impact.</p>
+            </div>
+            <div className="max-w-4xl mx-auto p-8 lg:p-12 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
+              <div className="flex flex-col md:flex-row gap-12 items-center">
+                <div className="md:w-1/2 space-y-6">
+                  <div className="text-orange-500 font-bold tracking-widest uppercase text-sm">☀️ Solar Industry</div>
+                  <h3 className="text-3xl font-bold text-white leading-tight">Lead Qualification Agent (Retell AI + n8n)</h3>
+                  <p className="text-slate-400">
+                    Eliminated 60% of manual filtering work by automating discovery calls and CRM scoring for a high-volume solar installer.
+                  </p>
+                  <ul className="space-y-3 text-sm text-slate-300">
+                    <li className="flex items-center gap-2">✅ Automated 100+ concurrent calls</li>
+                    <li className="flex items-center gap-2">✅ Direct Airtable/CRM integration</li>
+                    <li className="flex items-center gap-2">✅ AI-powered sentiment analysis</li>
+                  </ul>
+                </div>
+                <div className="md:w-1/2 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 p-6 flex flex-col justify-center items-center text-center space-y-4">
+                  <div className="text-5xl">🎧🤖</div>
+                  <div className="text-xl font-bold text-orange-400">Voice AI + n8n</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-widest">Workflow Blueprint Ready</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Agency Focused Section */}
         <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
           <div className="container mx-auto px-6">
