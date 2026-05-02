@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+aiohttp
+sqlalchemy
+pytest
+httpx
+python-multipart
+python-dotenv
+langchain
+crewai
+faiss-cpu
+openai

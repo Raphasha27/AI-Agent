@@ -1,0 +1,94 @@
+# Build Artifacts
+build/
+bin/
+lib/
+obj/
+*.o
+*.obj
+*.exe
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Dependencies
+tools/
+_deps/
+
+# Database & Logs
+*.db
+*.log
+supporthive.db
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+CTestTestfile.cmake
+install_manifest.txt
+
+# IDEs & Editors
+.vscode/
+.vs/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Temporary / OS
+Thumbs.db
+[Ee]xpress/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+ipch/
+*.aps
+*.bak
+*.cache
+*.ilk
+*.log
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln
+*.vcxproj
+*.filters
+
+# Specific Logs
+full_build_log*.txt
+
+# ─── Privacy & Secret Protection ────────────────────────────────────────────
+# Environment files — may contain IPs, tokens, credentials
+.env
+.env.*
+.env.local
+.env.*.local
+*.env
+
+# Local network config (never commit device-specific IPs or keys)
+local.config.*
+local_settings.*
+config.local.*
+network.conf
+device.conf
+
+# SSH / TLS keys
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.pub
+
+# Credential files
+*.credentials
+auth.json
+secrets.json
+secrets.yml
+secrets.yaml
