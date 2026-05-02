@@ -1,82 +1,52 @@
-# --- System / OS ---
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.so
+.tox/
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.cache/
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+docker/volumes/
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 *.log
-*.tmp
 
-# --- Environments & Secrets (CRITICAL) ---
-# Prevents leaking Supabase keys or service account tokens
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-*.env.[development|production]
-.env.sample
-
-# --- Node.js & Next.js (apps/landing) ---
-node_modules/
-.next/
-out/
-build/
-dist/
-.vercel/
-.turbo/
-npm-debug.log*
-
-# --- Python & FastAPI (services/core & scripts) ---
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-venv/
-ENV/
+# ── Test Artifacts ────────────────────────────────────────────────────────────
 .pytest_cache/
-.mypy_cache/
-.pyright_cache/
-# Playwright browser binaries used in your scrapers
-pw-browsers/
+htmlcov/
+.coverage
+coverage.xml
 
-# --- Mobile (apps/mobile) ---
-.expo/
-*.jks
-*.p12
-*.key
-*.mobileprovision
+# ── Alembic ───────────────────────────────────────────────────────────────────
+backend/app/db/migrations/versions/*.pyc
 
-# --- Data & Security ---
-# Protects the 50,000+ mock records and security audit logs
-data/*.csv
-data/*.json
-!data/.gitkeep
-local_security_audit_report.json
-
-# --- Infrastructure ---
-# Prevents committing local database volumes
-.db_data/
-postgres_data/
-
-# ─── Privacy & Device Protection ────────────────────────────────────────────
-# SSH / TLS / Certificate keys — never commit these
-*.pem
-*.p8
-*.pfx
-id_rsa
-id_rsa.pub
-id_ed25519
-id_ed25519.pub
-
-# Local network / device config — IPs must never be committed
-network.conf
-device.conf
-local.config.*
-local_settings.*
-config.local.*
-.env.device
-
-# Credential / auth files
-secrets.json
-secrets.yml
-secrets.yaml
-auth.json
-*.credentials
+# ── Agent workspace ───────────────────────────────────────────────────────────
+/tmp/agent_workspace/
