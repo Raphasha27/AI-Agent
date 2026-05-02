@@ -31,6 +31,11 @@ const ServicePillars = () => {
       title: "Backend White-Label",
       desc: "I handle the build, you handle the client. Reliable, scalable, and discrete.",
       icon: "🛡️"
+    },
+    {
+      title: "n8n Workflow Engineering",
+      desc: "Custom automations built to solve REAL problems, not just for the sake of it.",
+      icon: "⚙️"
     }
   ];
 
