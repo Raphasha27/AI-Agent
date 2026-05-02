@@ -33,6 +33,34 @@ export default function PartnerPage() {
 
         <ServicePillars />
 
+        {/* Free Resource: Verified n8n Templates */}
+        <section className="py-24 bg-orange-500/5 border-y border-orange-500/10">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col lg:flex-row items-center gap-12 bg-slate-900/50 p-12 rounded-[3rem] border border-slate-800">
+              <div className="lg:w-1/2 space-y-6">
+                <div className="inline-block px-4 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-widest">Free Resource</div>
+                <h2 className="text-4xl font-extrabold text-white">Top 3 Advanced n8n <br/> <span className="text-orange-500">Verified Creator</span> Templates</h2>
+                <p className="text-slate-400">
+                  Boost your agency performance with my most requested automation blueprints. 
+                  Completely free for our partners.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-medium text-slate-300">
+                  <div className="flex items-center gap-2">💎 SEO Strategy Swarm</div>
+                  <div className="flex items-center gap-2">📸 IG News Generator</div>
+                  <div className="flex items-center gap-2">📑 FB/IG Auto-Poster</div>
+                </div>
+                <div className="pt-4">
+                  <a href="#" className="text-orange-500 font-bold border-b-2 border-orange-500/30 hover:border-orange-500 transition-all">Download Blueprints →</a>
+                </div>
+              </div>
+              <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+                <div className="h-40 bg-slate-950 rounded-2xl border border-slate-800 flex items-center justify-center text-4xl">⚙️</div>
+                <div className="h-40 bg-slate-950 rounded-2xl border border-slate-800 flex items-center justify-center text-4xl mt-8">🤖</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Featured Case Study */}
         <section className="py-24 bg-slate-900/30">
           <div className="container mx-auto px-6">
