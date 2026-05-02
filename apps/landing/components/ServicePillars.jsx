@@ -51,6 +51,11 @@ const ServicePillars = () => {
       title: "WhatsApp Marketing & E-commerce",
       desc: "Automated campaigns and full e-commerce (payments/orders) inside WhatsApp chat.",
       icon: "🛍️"
+    },
+    {
+      title: "Enterprise AI Collaboration",
+      desc: "Native integration with Microsoft Work IQ (A2A) to bridge agents with M365 Copilot.",
+      icon: "🏢"
     }
   ];
 
