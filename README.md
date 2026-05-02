@@ -1,26 +1,28 @@
-![Sumbandila Banner](file:///C:/Users/nelso/.gemini/antigravity/brain/e188623f-d32b-435d-bee8-6df12acf1066/sumbandila_banner_1777650464535.png)
+![GitHub Harden Banner](https://via.placeholder.com/800x200.png?text=GitHub+Harden+Security+Framework)
 
-# 🇿🇦 SUMBANDILA
-### National Youth Growth Ecosystem — Republic of South Africa
-**"Sumbandila" (Venda) — "The one who leads the way."**
-
----
-
-🔗 **Official Demo**
-Live Platform: [https://landing-five-orcin-61.vercel.app](https://landing-five-orcin-61.vercel.app)
-
-📌 **What Is Sumbandila?**
-Sumbandila is an official national digital infrastructure platform built to connect South African citizens — especially youth — to verified opportunities, government services, skills training, and institutional accreditation.
-
-✨ **Developed By: Kirov Dynamics Technology**
+# 🛡️ GitHub Harden
+### Advanced Repository Security & Automated Audit Framework
 
 ---
 
-🛡️ **Security & Compliance**
-- **POPIA Compliant** — Zero-persistence policy for sensitive personal data.
-- **SHA-256 Hashing** — Tamper-proof fingerprint on every verified credential.
-- **L5 Sentinel Encryption** — Transport-layer encryption across all API calls.
-- **Automated Security Shield** — Powered by Kirov Dynamics proprietary audit logic.
+🔗 **Purpose**
+This repository serves as a powerful, centralized hub to audit, protect, and harden the security of all your GitHub repositories. It utilizes the power of Python to automate security enhancements and ensure compliance.
+
+📌 **Core Features**
+- **Branch Protection** — Automated enforcement of `main` branch protection rules.
+- **Billing Noise Reduction** — Streamlined CI/CD with zero unnecessary action runs.
+- **Automated Security Shield** — Python-powered tools to scan, audit, and patch vulnerabilities.
+- **TLS & Secret Verification** — Continuous monitoring for exposed secrets and insecure protocols.
+
+✨ **Developed By: Raphasha27**
+
+---
+
+🛡️ **Security & Protection Strategy**
+- **Protected Main Branch** — Direct commits are restricted; all changes must pass rigorous security checks.
+- **POPIA/GDPR Compliant Audits** — Zero-persistence policy for sensitive data.
+- **SHA-256 Hashing** — Tamper-proof fingerprint on configurations.
+- **L5 Sentinel Encryption** — Transport-layer encryption for all API interactions.
 
 🏗️ **Monorepo Structure**
 - `apps/landing` — Main Next.js public-facing app.
@@ -29,62 +31,38 @@ Sumbandila is an official national digital infrastructure platform built to conn
 
 ---
 
-🗺️ **Platform Architecture**
+🗺️ **Hardening Architecture**
 
 ```mermaid
 graph TD
-    subgraph Frontend ["Frontend Ecosystem (Next.js 16 + React 19)"]
-        Landing["🏠 Landing App (Main Portal)"]
-        Web["🌐 Web App (Vite Dashboard)"]
-        Mobile["📱 Mobile App (Expo Go)"]
+    subgraph Core ["Security Core"]
+        Scripts["🐍 Python Hardening Scripts"]
+        Audit["🔍 Automated Security Audit"]
     end
 
-    subgraph Backend ["Backend Infrastructure (FastAPI V4)"]
-        Core["⚙️ Core Services (Python 3.11)"]
-        DB[(🗄️ PostgreSQL / Supabase)]
-        Sentinel["🛡️ L5 Sentinel (Encryption Layer)"]
+    subgraph Targets ["GitHub Repositories"]
+        Repo1["📦 Target Repo A"]
+        Repo2["📦 Target Repo B"]
     end
 
-    subgraph Data ["Data Intelligence & Scrapers"]
-        Scrapers["🕵️ Scrapers (Playwright/pdfplumber)"]
-        Audit["🔍 Security Audit (POPIA Check)"]
-        Registry[(📊 National Registry Pulse)]
+    subgraph Operations ["Security Operations"]
+        BranchProtect["🛡️ Enforce Branch Protection"]
+        SecretScan["🔑 Scan for Exposed Secrets"]
     end
 
-    Landing <--> Core
-    Web <--> Core
-    Mobile <--> Core
-    Core <--> DB
-    Core <--> Sentinel
-    Scrapers --> Registry
-    Registry --> Core
-    Audit --> Core
-```
-
-🔄 **User Journey Flow**
-
-```mermaid
-sequenceDiagram
-    participant Citizen as 🇿🇦 Citizen
-    participant Landing as 🏠 Landing App
-    participant Sentinel as 🛡️ L5 Sentinel
-    participant Core as ⚙️ Core Services
-    participant DB as 📊 National Registry
-
-    Citizen->>Landing: Access Platform
-    Landing->>Core: Request Verification
-    Core->>Sentinel: Fingerprint Request (SHA-256)
-    Sentinel-->>Core: Secure Token
-    Core->>DB: Query Accredited Institutions
-    DB-->>Core: Return Registry Data
-    Core-->>Landing: Verified Results (Green/Yellow/Red)
-    Landing-->>Citizen: Display National Trust Status
+    Scripts --> Audit
+    Audit --> BranchProtect
+    Audit --> SecretScan
+    BranchProtect --> Repo1
+    BranchProtect --> Repo2
+    SecretScan --> Repo1
+    SecretScan --> Repo2
 ```
 
 🚀 **Quick Start**
+To run the local security audit tool using the power of Python:
 ```bash
-npm install
-npm run dev
+python scripts/local_security_audit.py --mode transport-layer-check
 ```
 
 ---
@@ -96,7 +74,7 @@ npm run dev
 ---
 
 📜 **License**
-MIT © 2026 — **Kirov Dynamics Technology** · Republic of South Africa
+MIT © 2026 — **Raphasha27**
 
 ---
-🇿🇦 *Sumbandila — Fighting Corruption through Digital Integrity. Built on Ubuntu. Powered by Batho Pele.*
+🛡️ *GitHub Harden — Securing repositories with Python and advanced auditing.*
