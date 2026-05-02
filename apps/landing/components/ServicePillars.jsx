@@ -46,6 +46,11 @@ const ServicePillars = () => {
       title: "SOP & Action Plan Engineering",
       desc: "Turn complex PDFs and transcripts into automated action plans and team SOPs.",
       icon: "📋"
+    },
+    {
+      title: "WhatsApp Marketing & E-commerce",
+      desc: "Automated campaigns and full e-commerce (payments/orders) inside WhatsApp chat.",
+      icon: "🛍️"
     }
   ];
 
