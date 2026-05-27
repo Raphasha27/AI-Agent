@@ -26,17 +26,17 @@ graph TD
     classDef db fill:#111,stroke:#00ffcc,stroke-width:1px,color:#fff
 
     %% Nodes
-    C1[WhatsApp / Web]:::client
-    C2[Voice Channels]:::client
+    C1["WhatsApp / Web"]:::client
+    C2["Voice Channels"]:::client
     
-    API[API Gateway / Node.js<br>Real-time Socket.io]:::gateway
+    API["API Gateway / Node.js<br>Real-time Socket.io"]:::gateway
     
-    Agent1[Orchestrator Agent<br>Python / FastAPI]:::intelligence
-    Agent2[Support Agent]:::intelligence
-    Agent3[Commerce Agent]:::intelligence
+    Agent1["Orchestrator Agent<br>Python / FastAPI"]:::intelligence
+    Agent2["Support Agent"]:::intelligence
+    Agent3["Commerce Agent"]:::intelligence
     
-    DB[(Vector DB<br>Memory Store)]:::db
-    Auth[(Tenant DB<br>PostgreSQL)]:::db
+    DB["(Vector DB<br>Memory Store)"]:::db
+    Auth["(Tenant DB<br>PostgreSQL)"]:::db
 
     %% Relationships
     C1 -->|Text/Media| API
