@@ -8,6 +8,7 @@ from typing import List, Optional
 
 from app.memory.embeddings import embed_text
 from app.memory.vector_store import add_vector, search_vectors, vector_store_stats
+from app.memory.xmem_store import xmem_save, merge_context, STREAM_PREFS, STREAM_WORKFLOW
 
 logger = logging.getLogger(__name__)
 
@@ -23,9 +24,15 @@ def remember(content: str, metadata: Optional[dict] = None) -> int:
     Returns:
         int: Vector store index of the saved memory.
     """
-    vector = embed_text(content)
-    idx    = add_vector(vector, content, metadata)
-    logger.info("[memory] Stored memory | idx=%d content=%.50s", idx, content)
+    # Defaulting to workflow lessons for standard remember calls
+    idx = xmem_save(STREAM_WORKFLOW, content, metadata)
+    logger.info("[memory] Xmem Stored workflow | idx=%d content=%.50s", idx, content)
+    return idx
+
+def remember_preference(content: str) -> int:
+    """Explicitly save a user preference or agent identity trait."""
+    idx = xmem_save(STREAM_PREFS, content)
+    logger.info("[memory] Xmem Stored preference | idx=%d content=%.50s", idx, content)
     return idx
 
 
@@ -53,15 +60,8 @@ def recall_as_context(query: str, top_k: int = 3) -> str:
     Returns:
         str: Formatted context block.
     """
-    memories = recall(query, top_k=top_k)
-    if not memories:
-        return "No relevant memories found."
-
-    lines = ["RELEVANT PAST MEMORIES:"]
-    for i, mem in enumerate(memories, 1):
-        lines.append(f"{i}. {mem['content']}")
-
-    return "\n".join(lines)
+    # Inject Xmem merged context
+    return merge_context(query)
 
 
 def memory_stats() -> dict:
