@@ -9,5 +9,5 @@ python-multipart>=0.0.9
 python-dotenv>=1.0.0
 langchain>=0.2.0
 crewai>=0.30.0
-faiss-cpu>=1.8.0
+faiss-cpu>=1.14.2
 openai>=1.30.0
