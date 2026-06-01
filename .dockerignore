@@ -1,0 +1,53 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+dist/
+build/
+
+# Node
+node_modules/
+frontend/node_modules/
+apps/*/node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+sqlite_*.db
+
+# Docker
+docker-compose.yml
+*.md
+
+# Temp
+tmp/
+temp/
