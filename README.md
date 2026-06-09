@@ -1,7 +1,8 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffcc,100:004a99&height=200&section=header&text=AI-Agent%20Core&fontSize=50&fontColor=ffffff&fontAlignY=40&desc=Multi-Agent%20Orchestration%20Framework&descAlignY=65" width="100%"/>
 
-  [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&style=for-the-badge)](https://python.org)
+  [![Version](https://img.shields.io/badge/Version-1.0.0-00ffcc?style=for-the-badge)
+  ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&style=for-the-badge)](https://python.org)
   [![FastAPI](https://img.shields.io/badge/FastAPI-0.111+-009688?logo=fastapi&style=for-the-badge)](https://fastapi.tiangolo.com)
   [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&style=for-the-badge)](https://react.dev)
   [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&style=for-the-badge)](https://nextjs.org)
