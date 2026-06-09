@@ -81,3 +81,28 @@ Think like a teammate, not a search engine. Add instructions. Provide examples. 
 ---
 
 *Part of the AI-Agent framework — production-grade prompting for reliable AI outputs.*
+
+## Claude-Specific Features (2026)
+
+When integrating with Claude, leverage these capabilities beyond basic chat:
+
+| Feature | Use Case |
+|---------|----------|
+| **Extended Thinking** | Complex analysis, code generation, difficult logic problems |
+| **Claude Code** | Build apps, edit codebases, refactor at scale |
+| **Research Mode** | Generate reports from multiple web sources |
+| **Web Search** | Get answers backed by live web data |
+| **Artifacts** | Interactive documents, charts, tools in one view |
+| **Skills** | Reusable workflows for repetitive tasks |
+| **Projects** | Organize recurring work with persistent context |
+
+The biggest mistake is using Claude as a chatbot instead of a productivity system. Each capability serves a specific job:
+
+```
+Chat        → Fast answers, quick edits
+Claude Code → Build and ship code
+Research    → Deep analysis from multiple sources
+Projects    → Context that persists across sessions
+Skills      → Repeatable, versioned workflows
+Artifacts   → Interactive outputs, not just text
+```
