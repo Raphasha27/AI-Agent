@@ -31,6 +31,25 @@ Agents don't run on prompts. They run on data infrastructure:
 | **Monitoring** | Token tracking, audit logs, guardrails, and debugging |
 | **Human-in-the-Loop** | Approval workflows for high-risk agent actions |
 
+### Workflow Philosophy: Idea → Ship
+
+The AI-Agent framework follows a layered approach where each component has one clear job:
+
+| Layer | Role | Tool |
+|-------|------|------|
+| **Workspace** | Ideas → Structure | Organize, plan, and track work |
+| **Build** | Structure → Code | Execute changes, review tradeoffs |
+| **Orchestrate** | Coordinate flow | Route work, capture context, manage workflows |
+| **Govern** | Source of truth | Versioning, reviews, audit trail |
+
+The pipeline that moves work forward:
+
+```
+Idea → Context → Build → Review → Ship → Learn
+```
+
+AI tools are strongest when each has a clear job. One tool does not need to do everything. The stack should support how work actually moves — not how a demo looks.
+
 ### Ten Principles of Production-Ready Agents
 
 1. **Fail-Safe Design** — Clear goals, bounded scope, predictable fallback paths
