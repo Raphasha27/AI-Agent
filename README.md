@@ -10,6 +10,43 @@
 
   <p><strong>An autonomous multi-agent orchestration framework with FastAPI intelligence core, React dashboard, and Next.js landing portal.</strong></p>
 </div>
+---
+
+## Design Philosophy
+
+### Reliability Through Structure, Not Raw Capability
+
+AI agents don't fail because of intelligence limitations. They fail when the system design around them is loose. Reliability comes from structure, constraints, and control layers — not model capability alone.
+
+### Production Data Infrastructure
+
+Agents don't run on prompts. They run on data infrastructure:
+
+| Layer | Implementation |
+|-------|---------------|
+| **Data Ingestion** | Structured pipelines with validation before agents consume |
+| **Vector Pipelines** | FAISS embeddings with versioned index management |
+| **Agent Memory** | Persistent context storage across task executions |
+| **Tool Registry** | Discoverable, versioned tools with defined execution rules |
+| **Monitoring** | Token tracking, audit logs, guardrails, and debugging |
+| **Human-in-the-Loop** | Approval workflows for high-risk agent actions |
+
+### Ten Principles of Production-Ready Agents
+
+1. **Fail-Safe Design** — Clear goals, bounded scope, predictable fallback paths
+2. **Context Configuration** — Well-structured retrieval grounds accuracy and consistency
+3. **Tool-Based Architecture** — Every tool interaction has validation, versioning, and execution rules
+4. **Product-Level Prompts** — Prompts are specifications that shape outputs and decisions
+5. **Cost & Performance Control** — Routing, caching, and token discipline ensure scalability
+6. **Trustworthy Interactions** — Clear limits, transparent actions, defined escalation paths
+7. **Versioning & Release Gates** — Track prompts, tools, and datasets for controlled evolution
+8. **Safety & Governance** — Permissions, auditability, and human oversight
+9. **Real-World Evaluation** — Test across workflows, edge cases, and tool chains
+10. **Continuous Improvement** — Logs, traces, and feedback loops upgrade every run
+
+### Agentic AI Is a Data Architecture Problem
+
+Building agents without fixing the data layer creates chaos: hallucinations, broken workflows, untraceable decisions, and runaway token costs. The real work starts before the agent is deployed.
 
 ---
 
