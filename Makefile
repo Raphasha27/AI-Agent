@@ -1,18 +1,26 @@
-# RepoFleet AI Standard Makefile (Python)
-.PHONY: run test lint build clean
+.PHONY: install test lint clean run dev build
 
-run:
-	python -m app.main || python main.py || uvicorn app.main:app --reload
+install:
+	pip install -r requirements.txt
+	cd frontend && npm install
 
 test:
-	pytest || python -m unittest discover
+	pytest tests/ -v
 
 lint:
-	flake8 . || black --check .
+	ruff check .
+	cd frontend && npm run lint 2>/dev/null || true
 
 build:
 	python -m compileall .
 
 clean:
-	find . -type d -name "__pycache__" -exec rm -r {} +
-	find . -type f -name "*.pyc" -delete
+	rm -rf __pycache__ .pytest_cache build dist *.egg-info
+	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+	rm -rf frontend/node_modules frontend/dist
+
+run:
+	cd backend && uvicorn app.main:app --reload
+
+dev:
+	cd frontend && npm run dev

@@ -7,6 +7,16 @@ This roadmap outlines the journey from foundations to **Agentic Engineering**, d
 *   **Responsive Design:** Mobile-first, universal access.
 *   **Git & Version Control:** Professional collaboration.
 *   **Internet Basics:** HTTP, DNS, Browsers.
+## Q3 2026 — Flagship Release v1.0
+
+- [ ] v1.0 release with semantic versioning
+- [ ] Automated release pipeline (GitHub Releases)
+- [ ] Public API documentation site
+- [ ] Performance benchmarks and optimization
+- [ ] Community contribution onboarding guide
+- [ ] Integration tests for all agent pipelines
+- [ ] Docker image publishing to GHCR
+- [ ] User documentation for non-technical users
 
 ## ┃ ┣ 📂 Frontend Development
 *   **Modern JS (ES6+):** The language of interaction.
