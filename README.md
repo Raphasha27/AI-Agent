@@ -8,6 +8,7 @@
   [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&style=for-the-badge)](https://nextjs.org)
   [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&style=for-the-badge)](https://docker.com)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+  [![Buy on Gumroad](https://img.shields.io/badge/Free%20Download-AI%20Agent%20Blueprint-00ffcc?logo=gumroad&style=for-the-badge)](https://raphashakoketso.gumroad.com/l/ai-agent-blueprint)
 
   <p><strong>An autonomous multi-agent orchestration framework with FastAPI intelligence core, React dashboard, and Next.js landing portal.</strong></p>
 </div>
