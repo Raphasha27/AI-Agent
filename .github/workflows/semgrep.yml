@@ -1,4 +1,4 @@
-﻿name: "Semgrep SAST"
+name: "Semgrep SAST"
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Semgrep
         uses: returntocorp/semgrep-action@v1
