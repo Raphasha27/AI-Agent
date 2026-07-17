@@ -218,6 +218,8 @@ AI-Agent/
 
 ```bash
 # Clone the repository
+
+[![CI](https://github.com/Raphasha27/AI-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Raphasha27/AI-Agent/actions/workflows/ci.yml)
 git clone https://github.com/Raphasha27/AI-Agent.git
 cd AI-Agent
 
