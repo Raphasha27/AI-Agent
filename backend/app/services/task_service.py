@@ -4,6 +4,7 @@ Task Service – CRUD operations for task management.
 
 import logging
 import uuid
+import re
 from typing import List, Optional
 
 from sqlalchemy.orm import Session
@@ -18,7 +19,7 @@ def create_task(db: Session, title: str, description: Optional[str] = None) -> T
     db.add(task)
     db.commit()
     db.refresh(task)
-    logger.info("[task_service] Task created | id=%s title=%s", task.id, title.replace("\n", " ").replace("\r", " "))
+    logger.info("[task_service] Task created | id=%s title=%s", task.id, re.sub(r'[\r\n]+', ' ', title))
     return task
 
 
@@ -45,7 +46,7 @@ def update_task_status(
     task.agent_used = agent_used
     db.commit()
     db.refresh(task)
-    logger.info("[task_service] Task updated | id=%s status=%s", task_id, status.replace("\n", " ").replace("\r", " "))
+    logger.info("[task_service] Task updated | id=%s status=%s", task_id, re.sub(r'[\r\n]+', ' ', status))
     return task
 
 
@@ -55,5 +56,5 @@ def delete_task(db: Session, task_id: str) -> bool:
         return False
     db.delete(task)
     db.commit()
-    logger.info("[task_service] Task deleted | id=%s", task_id.replace("\n", " ").replace("\r", " "))
+    logger.info("[task_service] Task deleted | id=%s", re.sub(r'[\r\n]+', ' ', task_id))
     return True

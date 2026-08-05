@@ -7,6 +7,7 @@ outreach for founders and decision-makers.
 
 import json
 import logging
+import re
 from typing import List, Dict, Any
 from datetime import datetime
 
@@ -21,7 +22,7 @@ class LinkedInOutreachAgent:
         Simulates finding decision-makers in the target industry.
         In a production environment, this would integrate with Sales Navigator or similar.
         """
-        self.logger.info(f"Searching for {count} prospects in {self.industry.replace(chr(10), chr(32)).replace(chr(13), chr(32))}...")
+        self.logger.info(f"Searching for {count} prospects in {re.sub(r'[\r\n]+', ' ', self.industry)}...")
         
         # Simulated prospect data
         return [

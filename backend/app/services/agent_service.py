@@ -4,6 +4,7 @@ Called by API routes to run agent workflows.
 """
 
 import logging
+import re
 from typing import Optional
 
 from app.agents.coordinator_agent import CoordinatorAgent
@@ -32,7 +33,7 @@ def execute_agent(task: str, mode: str = "full") -> dict:
     Returns:
         dict: Agent execution results including plan, research, and report.
     """
-    logger.info("[agent_service] Request received | task=%.60s mode=%s", task.replace("\n", " ").replace("\r", " "), mode)
+    logger.info("[agent_service] Request received | task=%.60s mode=%s", re.sub(r'[\r\n]+', ' ', task), mode)
 
     coordinator = _get_coordinator()
     result      = coordinator.execute(task=task, mode=mode)

@@ -10,6 +10,7 @@ The coordinator:
 """
 
 import logging
+import re
 
 from app.agents.base_agent import BaseAgent
 from app.agents.planner_agent import PlannerAgent
@@ -55,7 +56,7 @@ class CoordinatorAgent(BaseAgent):
         Returns:
             dict with all agent outputs and a final consolidated report.
         """
-        logger.info("[%s] Starting execution | task=%s mode=%s", self.name, task[:60].replace("\n", " ").replace("\r", " "), mode)
+        logger.info("[%s] Starting execution | task=%s mode=%s", self.name, re.sub(r'[\r\n]+', ' ', task[:60]), mode)
 
         outputs: dict = {}
 

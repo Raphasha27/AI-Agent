@@ -7,6 +7,7 @@ optimization and multi-CRM integration support.
 
 import json
 import logging
+import re
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 
