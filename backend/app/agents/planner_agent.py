@@ -55,7 +55,7 @@ SUMMARY:
         raw = self.think(prompt)
         steps = self._parse_steps(raw)
 
-        logger.info("[%s] Plan generated | steps=%d task=%s", self.name, len(steps), task[:60])
+        logger.info("[%s] Plan generated | steps=%d task=%s", self.name, len(steps), task[:60].replace("\n", " ").replace("\r", " "))
 
         return {
             "agent":   self.name,

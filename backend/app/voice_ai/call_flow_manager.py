@@ -26,7 +26,7 @@ class CallFlowManager:
             "created_at": datetime.now().isoformat(),
             "version": 1
         }
-        self.logger.info(f"Created call flow: {flow_id}")
+        self.logger.info(f"Created call flow: {str(flow_id).replace(chr(10), chr(32)).replace(chr(13), chr(32))}")
 
     async def execute_step(self, flow_id: str, step_index: int, context: Dict[str, Any]) -> Dict[str, Any]:
         """

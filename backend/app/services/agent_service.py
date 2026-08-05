@@ -32,7 +32,7 @@ def execute_agent(task: str, mode: str = "full") -> dict:
     Returns:
         dict: Agent execution results including plan, research, and report.
     """
-    logger.info("[agent_service] Request received | task=%.60s mode=%s", task, mode)
+    logger.info("[agent_service] Request received | task=%.60s mode=%s", task.replace("\n", " ").replace("\r", " "), mode)
 
     coordinator = _get_coordinator()
     result      = coordinator.execute(task=task, mode=mode)

@@ -55,7 +55,7 @@ class CoordinatorAgent(BaseAgent):
         Returns:
             dict with all agent outputs and a final consolidated report.
         """
-        logger.info("[%s] Starting execution | task=%s mode=%s", self.name, task[:60], mode)
+        logger.info("[%s] Starting execution | task=%s mode=%s", self.name, task[:60].replace("\n", " ").replace("\r", " "), mode)
 
         outputs: dict = {}
 

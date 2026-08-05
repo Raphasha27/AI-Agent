@@ -31,7 +31,7 @@ class SocialMediaGrowthEngine:
         if skill_name not in self.skills:
             raise ValueError(f"Skill {skill_name} not found in social-media-skills pack")
 
-        self.logger.info(f"Executing skill: {skill_name} for topic: {topic}")
+        self.logger.info(f"Executing skill: {skill_name} for topic: {topic.replace(chr(10), chr(32)).replace(chr(13), chr(32))}")
         
         # Implementation of specialized prompting logic per skill
         content = self._run_skill_logic(skill_name, topic)

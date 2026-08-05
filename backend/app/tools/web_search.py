@@ -27,7 +27,7 @@ def search_web(query: str, max_results: int = 5) -> str:
     Returns:
         A formatted string containing the search results, or an error message.
     """
-    logger.info("[web_search] Searching | query=%s", query[:80])
+    logger.info("[web_search] Searching | query=%s", query[:80].replace("\n", " ").replace("\r", " "))
 
     try:
         resp = requests.get(

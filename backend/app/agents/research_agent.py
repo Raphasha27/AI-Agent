@@ -32,7 +32,7 @@ class ResearchAgent(BaseAgent):
         Returns:
             dict with keys: agent, topic, raw_results, summary
         """
-        logger.info("[%s] Researching topic | topic=%s", self.name, topic[:60])
+        logger.info("[%s] Researching topic | topic=%s", self.name, topic[:60].replace("\n", " ").replace("\r", " "))
 
         raw_results = search_web(topic)
 
@@ -57,7 +57,7 @@ Keep your summary factual, concise (200–400 words), and well-organised.
 
         summary = self.think(prompt)
 
-        logger.info("[%s] Research complete | topic=%s", self.name, topic[:60])
+        logger.info("[%s] Research complete | topic=%s", self.name, topic[:60].replace("\n", " ").replace("\r", " "))
 
         return {
             "agent":       self.name,

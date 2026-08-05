@@ -61,7 +61,7 @@ Instructions:
         report = self.think(prompt, temperature=0.3)
         timestamp = datetime.now(timezone.utc).isoformat()
 
-        logger.info("[%s] Report generated | task=%s ts=%s", self.name, task[:60], timestamp)
+        logger.info("[%s] Report generated | task=%s ts=%s", self.name, task[:60].replace("\n", " ").replace("\r", " "), timestamp)
 
         return {
             "agent":     self.name,
