@@ -8,7 +8,6 @@ without direct data wiring.
 
 import logging
 import aiohttp
-import re
 from typing import Dict, Any, List
 
 class WorkIQConnector:
@@ -29,7 +28,7 @@ class WorkIQConnector:
         """
         Sends a query to Work IQ via A2A protocol.
         """
-        self.logger.info(f"Delegating task to M365 Copilot via A2A: {re.sub(r'[\r\n]+', ' ', question)}")
+        self.logger.debug("Delegating task to M365 Copilot via A2A")
         
         headers = {
             "Authorization": f"Bearer {await self.get_token()}",

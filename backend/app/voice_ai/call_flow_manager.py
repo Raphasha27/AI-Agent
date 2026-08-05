@@ -7,7 +7,6 @@ optimization and multi-CRM integration support.
 
 import json
 import logging
-import re
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 
@@ -27,7 +26,7 @@ class CallFlowManager:
             "created_at": datetime.now().isoformat(),
             "version": 1
         }
-        self.logger.info(f"Created call flow: {str(flow_id).replace(chr(10), chr(32)).replace(chr(13), chr(32))}")
+        self.logger.info("Created call flow sequence")
 
     async def execute_step(self, flow_id: str, step_index: int, context: Dict[str, Any]) -> Dict[str, Any]:
         """

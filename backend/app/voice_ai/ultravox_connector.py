@@ -17,7 +17,7 @@ class UltravoxConnector:
         """
         Initiates a voice call using Ultravox's low-latency engine.
         """
-        self.logger.info("Starting Ultravox call | destination_masked=%s", "***" + phone_number[-4:])
+        self.logger.info("Starting Ultravox call")
         return {
             "call_id": f"uv_{phone_number[-4:]}_xyz",
             "status": "ringing",
