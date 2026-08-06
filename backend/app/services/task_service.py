@@ -45,7 +45,7 @@ def update_task_status(
     task.agent_used = agent_used
     db.commit()
     db.refresh(task)
-    logger.info("[task_service] Task updated | id=%s", task_id)
+    logger.info("[task_service] Task updated")
     return task
 
 

@@ -21,7 +21,7 @@ class LinkedInOutreachAgent:
         Simulates finding decision-makers in the target industry.
         In a production environment, this would integrate with Sales Navigator or similar.
         """
-        self.logger.info("Searching for %d prospects in the target market", count)
+        self.logger.info("Searching for prospects in the target market")
         
         # Simulated prospect data
         return [
